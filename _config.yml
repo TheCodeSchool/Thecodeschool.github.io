@@ -1,40 +1,37 @@
 # Site settings
-locale:         th
-title:          "UX Academy"
-name:           "UX Academy"
-email:          apirakb@gmail.com
+locale:         en
+title:          "The Code School"
+name:           "The Code School"
+email:          
 description: >
-  UX Academy is evangelist company.
-  We focusing on User Experience design and use understanding
-  by the variety of method ex. User Research,
-  User Interview, Usability Testing, Data Analytic.
+  The Code School is the place in Cameroon to learn Html and UX.
   Our service is Training, Coaching and Consultant.
 baseurl:        "" # the subpath of your site, e.g. /blog/
-url:            "http://uxacademy.in.th"
-# twitter_username: apirak
-github_username:  uxacademy
-facebook_group: groups/ux.in.th
-facebook_page: uxacademy.th
+url:            "http://thecodeschool.xyz"
+# twitter_username: thecodeschool
+github_username:  TheCodeSchool
+facebook_group: 
+facebook_page: 
 
 # Build settings
 markdown: kramdown
 excerpt_separator: <!--more-->
 paginate: 10
 paginate_path: "/blog/page:num/"
-google_analytics_id: "UA-59158027-1"
+google_analytics_id: "UA-"
 permalink:      /:categories/:year/:month/:day/:title/
 
 image:          "/images/site_icons/site_icon-256x256.png"
 icon:           "/images/site_icons/site_icon-256x256.png"
 
-timezone:       Asia/Bangkok
+timezone:       Africa/Douala
 
 author:
-  facebook:     apirak
-  twitter:      apirak
-  google_plus:  apirakpanatkool
-fb_admins:      644389187
-fb_appid:       1195873630426381
+  facebook:     BantouTelecom
+  twitter:      Bantoutelecom
+  google_plus:  Bantoutelecom
+fb_admins:      
+fb_appid:       
 
 exclude:
   - node_modules
