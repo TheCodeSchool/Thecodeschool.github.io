@@ -1,0 +1,57 @@
+---
+layout: post
+title: Process การเตรียมไฟล์ icon หลากหลายขนาด
+date: 2015-02-26 09:38:00.000000000 +07:00
+type: post
+published: true
+status: publish
+categories:
+- case study
+tags:
+- design process
+- UI
+meta:
+  _wpas_done_all: '1'
+  _wpcom_is_markdown: '1'
+  dsq_thread_id: '3548935612'
+  _wp_old_slug: process-%e0%b8%81%e0%b8%b2%e0%b8%a3%e0%b9%80%e0%b8%95%e0%b8%a3%e0%b8%b5%e0%b8%a2%e0%b8%a1%e0%b9%84%e0%b8%9f%e0%b8%a5%e0%b9%8c-icon-%e0%b8%ab%e0%b8%a5%e0%b8%b2%e0%b8%81%e0%b8%ab%e0%b8%a5%e0%b8%b2
+author:
+  login: apirak
+  email: apirakb@gmail.com
+  display_name: Apirak Panatkool
+  first_name: Apirak
+  last_name: Panatkool
+---
+<p>คนที่ทำงาน Graphic มักบ่นเรื่อง <b>เจ้าของงานชอบเปลี่ยน!</b> ทำให้งานออกมาล่าช้าหรือไม่สวย ผมก็มองว่าจริง แต่แทนที่เราจะไปบังคับไม่ให้เจ้าของงานเปลี่ยน ผมกลับมองว่าความเปลี่ยนแปลงคือสิ่งที่ดี ความเปลี่ยนแปลงแสดงให้เห็นถึงการแข่งขันที่เจ้าของพยายามทำให้มันดีขึ้น (ดีขึ้นจริงหรือเปล่า เป็นอีกเรื่องหนึ่ง) ของที่ไม่เปลี่ยนต่างหากที่อันตราย เพราะมันแสดงว่าไม่มีการแข่งขันที่เราต้องทำให้มันดีขึ้น</p>
+<p>ดังนั้นการที่เราไม่พร้อมรับความเปลี่ยนแปลงต่างหากที่ควรเปลี่ยน ในวงการ Software Development มีกระบวนการอย่าง<b> TDD</b> (Test Driven Development) ที่ช่วยให้การเปลี่ยนแปลงไม่น่ากลัวและสามารถเปลี่ยนได้อย่างรวดเร็ว หรือกระบวนการอย่าง <b>Agile</b> ที่ทำให้โปรแกรมเสร็จอยู่ตลอดเวลา แก้ปัญหาการเปลี่ยนแปลงจนโปรแกรมไม่เสร็จ</p>
+<p>ในการทำงานด้าน Graphic และ UX/UI ก็มีเครื่องมือมากมายที่ช่วยให้เรารับความเปลี่ยนแปลงได้อย่างมีความสุข</p>
+<p>บังเอิญอาทิตย์ที่ผ่านมา คุณ&nbsp;<a href="https://www.facebook.com/sasawat.charurat" title="facebook sasawat.charurat" target="_blank">@Sasawat Win Charurat</a>&nbsp;ถามเรื่องการจัดเตรียม icon</p>
+<p><a href="https://www.ux.in.th/wp-content/uploads/2015/02/1424918214_full.png" target="_blank"><img src="{{ site.baseurl }}/assets/1424918214_thumb.png" align="middle" class="aligncenter full full full" alt="" title="" /></a></p>
+<blockquote><p>ขอสอบถามหาความรู้หน่อยครับผม ตอนนี้เวลาออกแบบเว็บ/ทำเว็บ เวลาทำ artwork เตรียมให้devไปใช้อะครับ เราต้องเตรียม icon ต่างๆไว้อย่างไรจึงจะเหมาะสมที่สุดในตอนนี้ครับ?<br />
+<br />สาเหตุ: เนื่องจากตอนนี้จอretina เยอะกันมาก บางคนซูมหน้าจอซ้ำอีก ทำให้ iconsต่างๆที่ทำมาแตกเพราะเป็นไฟล์ png</p>
+<p>ผล: เราควรจะทำเป็น png ไฟล์เดียว มี icons เรียงกันครบเหมือนเดิมแต่ใหญ่ขึ้น(เท่าไหร่ดี) หรือ เราทำเป็นลิสในไฟล์เดียวแล้วexport มาเป็นsvg (วาดใหม่หมดสินะ!!!)</p></blockquote>
+<p><!--more--><br />ผมมองว่าเป็นคำถามที่ดีมากๆ ครับ เพราะ Designer ส่วนมากกะว่าทำงานครั้งเดียวเสร็จ แล้วก็ตัดสินใจทำแบบ Manual ซึ่งเร็วกว่าสำหรับครั้งแรก แต่เค้าลืมว่ามันต้องมีแก้แน่นอนอยู่แล้ว ดังนั้นถ้าเราจัดเตรียมไฟล์ให้ export ออกมาเป็น version ต่างๆ ได้ง่าย ก็จะช่วยให้ลดงานในระยะยาว</p>
+<p>สิ่งที่เยี่ยมมากคือใน&nbsp;<a href="https://www.facebook.com/groups/ux.in.th" title="" target="_blank">facebook.com/groups/ux.in.th</a>&nbsp;มีคนมาช่วยกันตอบเพียบเลยครับ ผมเลยขอเอามาบันทึกไว้ก่อนที่มันจะหายไปใน timeline</p>
+<blockquote><p>คุณ&nbsp;@Ekasit Tragulkiattigul&nbsp;บอกว่า "ผมใช้ Sketch ครับ"</p></blockquote>
+<p><a href="file:///Users/apirak/Library/Containers/com.blogo.Blogo/Data/Library/Caches/com.blogo.Blogo/1424917579_full.png" target="_blank"><img src="{{ site.baseurl }}/assets/1424917642_thumb.png" align="middle" class="aligncenter full full full" alt="" title="" /></a><br />
+<br />แล้วก็แนะนำด้วยว่านอกจาก icon ยังสามารถทำ web ได้ด้วย พร้อมโชว์ผลงาน&nbsp;</p>
+<p><a href="https://www.ux.in.th/wp-content/uploads/2015/02/1424917630_full.jpeg" target="_blank"><img src="{{ site.baseurl }}/assets/1424917630_thumb.jpeg" align="middle" class="aligncenter full full full" alt="" title="" /></a></p>
+<blockquote><p>เราไม่ต้องห่วงเรื่องภาพแตกเพราะมันเป็น vector</p>
+<p>ตอนเอา source ให้เดฟ ก็ Export เป็นตัวๆ ไปได้ครับ มันมี Slice แต่ส่วนใหญ่งานมันจะเป็นการคอนโทรล CSS ด้วยอ่ะครับ </p>
+<p>ถ้าเก่ง CSS ก็จะใช้รูปน้อยด้วยครับ<br />
+Export ออกเป็น png เลยครับผม</p>
+<p>Sketch ใช้ไม่ยากครับ ที่ผมอัพไปก็เพิ่งใช้เป็นงานที่ 3 เองครับ สนุกใช้งานง่าย ลืม Photoshop ไปเลยแน่นอนครับผม</p></blockquote>
+<p>คุณ&nbsp;<a href="https://www.facebook.com/natkansuwan" title="facebook natkansuwan" target="_blank">@Kessurang Nat Kansuwan</a>&nbsp;เสนอว่า</p>
+<blockquote><p>ปกติถ้าเอาเนี้ยบจริงๆ ก็จะตัดเป็น png 2x &amp; 4x แต่ชัวร์ๆก็จะ svg<br />
+photoshop cc export เป็น x2 ได้นะคะ ใช้&nbsp;<a href="https://helpx.adobe.com/photoshop/using/generate-assets-layers.html" title="" target="_blank">helpx.adobe.com/.../generate-assets-layers.html</a><br />ออกมาพร้อมกันแค่ตั้งชื่อ layer เลยค่า เซฟแบบเป็น .png, .jpg พร้อมกันก็ล่ายยย คุณภาพไฟล์เอาเท่าไรก็ตั้งที่ชื่อ layer ได้เลย สะดวกดีเหมือนกันฮับ</p></blockquote>
+<p>คุณ&nbsp;<a href="https://www.facebook.com/everysundays" title="" target="_blank">@Pattaya Upara</a>&nbsp;เสนอเพิ่มอีกแนวว่า</p>
+<blockquote><p>ถ้าเป็นเรื่องไอคอนเพียวๆเปลี่ยนไปใช้ fontawesome ก็ได้นะครับ เพิ่ม  ใส่ class ใช้ได้เลย ไอคอนชุดมาตรฐาน flat design สมัยนี้มีมาครบมาสักพักแล้วครับhttp://fortawesome.github.io/Font-Awesome/whats-new/</p></blockquote>
+<p>คุณ&nbsp;<a href="https://www.facebook.com/kriangkuy" title="" target="_blank">@Takeshi Kriang</a>&nbsp;ว่า</p>
+<blockquote><p>ชอบใช้โอเพ่นซอสที่เขาทำมาให้ใช้ได้เลย อย่างตัวนี้กำลังชอบมากครับ&nbsp;<a href="http://www.ionicons.com" title="" target="_blank">ionicons.com</a>&nbsp;สะดวกไม่ต้องตัด css เอง</p></blockquote>
+<p>คุณ&nbsp;<a href="https://www.facebook.com/amp.live.3" title="" target="_blank">AMp Live</a>&nbsp;ว่า</p>
+<blockquote><p>ถ้าไม่ใช้ font icon ก็ทำแค่ ix 2x ก็พอครับ ปัญหาเรื่อง zoom ใน browser ก็ปล่อยไปครับ เพราะถ้าจะให้ perfect ทุก scale คงต้องเป็น svg (ซึ่งผมมองว่ามันไม่ได้จำเป็นต้องให้ perfect ขนาดนั้น เอาเวลาไปทำอย่างอื่นดีกว่า)<br />
+<br />ตอนส่งงานก็รวมทั้งหมดเอามาทำเป็น style guide ว่าเราใช้ไอคอนตัวไหน ชื่ออะไรบ้าง ไม่ต้อง export ออกมาเป็นชิ้นๆ</p>
+</blockquote>
+<p>ขอบคุณทุกท่านที่แบ่งบันความรู้นะครับ ถ้าท่านไหนสนใจเพิ่มเติมเกี่ยวกับ process การทำ icon บน sketch สามารถดูได้ที่นี่ครับ</p>
+<p><a href="http://airwalk-design.com/?cat=tutorials&amp;inc=1744&amp;stick=design-a-todo-list-app-icon-with-sketch-3" title="" target="_blank">http://airwalk-design.com/?cat=tutorials&amp;inc=1744&amp;stick=design-a-todo-list-app-icon-with-sketch-3</a></p>
+<p></p>

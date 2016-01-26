@@ -1,0 +1,44 @@
+---
+layout: post
+title: วางปุ่มผิดที่
+date: 2013-01-23 08:00:32.000000000 +07:00
+type: post
+published: true
+status: publish
+categories:
+- case study
+tags: []
+meta:
+  _edit_last: '2'
+  _yoast_wpseo_linkdex: '48'
+  _yoast_wpseo_focuskw: บัตรเครดิต อินเทอร์เน็ต
+  _yoast_wpseo_metadesc: ตัวอย่างศึกษาและคำแนะนำการออกแบบหน้าจอการยืนยันการจ่ายเงินผ่าน
+    บัตรเครดิต ทาง อินเทอร์เน็ต ที่การย้ายปุ่มเพียงนิดเดียวก็ส่งผลต่อการรับรู้การใช้งานของผู้ใช้
+  _popular_views: '1784'
+  _wpas_done_all: '1'
+  dsq_thread_id: '1041350739'
+  _wpcom_is_markdown: '1'
+  mytory_md_visits_count: '2'
+author:
+  login: keng
+  email: patipat@me.com
+  display_name: Keng Susumpow
+  first_name: Keng
+  last_name: Susumpow
+---
+<p>สดๆ เลยครับ</p>
+<p>เมื่อกี้มีเหตุต้องจ่ายเงินผ่านด้วย บัตรเครดิต บนอินเทอร์เน็ต  ปกติธนาคารเจ้าของบัตรท่านก็จะมีระบบความปลอดภัยค่อนข้างสูงครับคือจะต้องมีการรับ One Time Password (OTP) ในการดำเนินธุรกรรมใดๆ ซึ่ง OTP ที่ว่าท่านก็จะให้ส่งเข้า SMS และมีอายุการใช้งานเพียงแค่ระยะเวลาหนึ่ง ซึ่งระบบ OTP กับการธุรกรรมการเงินนี่ได้รับรางวัล ICT Excellent Award ปี 2553 เลยเชียว</p>
+<p>ทีนี้ปัญหามันอยู่ตรงนี้ครับ</p>
+<p><!--more--></p>
+<p>วิธีการรับ OTP เนี่ยมันจะต้องส่งเข้าหมายเลขโทรศัพท์มือถือที่ลงทะเบียนไว้กับระบบแล้ว ปกติเวลาใช้บริการอื่นๆ ระบบก็จะส่ง SMS มาให้เองโดยอัตโนมัติ แต่ไฉนระบบของบัตรเครดิตจึงไม่ส่ง SMS มาให้โดยอัตโนมัติ ยังดีที่มีปุ่มให้ผู้ใช้กดเพื่อขอ OTP แต่เดี๋ยวก่อน ปุ่มนั้นมันอยู่ที่ไหนกัน?</p>
+<p>[caption id="attachment_594" align="aligncenter" width="1554"]<a href="http://www.ux.in.th/?attachment_id=594" rel="attachment wp-att-594"><img class="size-full wp-image-594" alt="แสดงหน้าจอรอรับ OTP ของบัตรเครดิต" src="{{ site.baseurl }}/assets/&#3592;&#3633;&#3610;&#3616;&#3634;&#3614;&#3627;&#3609;&#3657;&#3634;&#3592;&#3629;-2556-01-22-&#3603;-20.21.40.png" width="1554" height="988" /></a> แสดงหน้าจอรอรับ OTP ของบัตรเครดิต[/caption]</p>
+<p>ปุ่มอยู่ที่ใดกันหนา?</p>
+<p>[caption id="attachment_596" align="aligncenter" width="624"]<a href="http://www.ux.in.th/?attachment_id=596" rel="attachment wp-att-596"><img class="size-full wp-image-596" alt="แสดงให้เห็นปุ่มเพื่อทำการขอ OTP" src="{{ site.baseurl }}/assets/otp-kb-expand.png" width="624" height="177" /></a> แสดงให้เห็นปุ่มเพื่อทำการขอ OTP[/caption]</p>
+<p>จะเห็นว่าข้อมูลท่านแบ่งเป็น 2 ช่วง คือ ด้านบนสำหรับการกรอก OTP และ ด้านล่างสำหรับการยืนยันการกรอกฟอร์ม OTP</p>
+<p>ทีนี้ลองคิดตามลำดับเราก็จะพบว่า ปุ่ม Request OTP นั้นจะวางไว้ในที่ที่ค่อนข้างประหลาด ตำแหน่งของปุ่มมีแนวโน้มจะให้ผู้ใช้คิดไปได้ว่าเป็นการส่ง OTP มากกว่าการขอ OTP ซึ่งสมองของผู้ใช้มีแนวโน้มที่รับรู้หน้าจอเป็น</p>
+<p>[caption id="attachment_598" align="aligncenter" width="1452"]<a href="http://www.ux.in.th/?attachment_id=598" rel="attachment wp-att-598"><img class="size-full wp-image-598" alt="แสดง Operation Flow ของหน้าจอกรอก OTP ปัจจุบัน" src="{{ site.baseurl }}/assets/current-otp-operation-flow.png" width="1452" height="280" /></a> แสดง Operation Flow ของหน้าจอกรอก OTP ปัจจุบัน[/caption]</p>
+<p>แต่ถ้าย้ายปุ่ม OTP ไปไว้ก่อนที่ผู้ใช้จะคิดว่าตัวเองสามารถกรอก OTP ได้เลยเป็นแบบนี้</p>
+<p>[caption id="attachment_599" align="aligncenter" width="624"]<a href="http://www.ux.in.th/?attachment_id=599" rel="attachment wp-att-599"><img class="size-full wp-image-599" alt="แสดงการย้ายปุ่ม OTP ที่น่าจะทำให้ผู้ใช้ใช้งานได้ง่ายขึ้น" src="{{ site.baseurl }}/assets/otp-kb-expand-proposal.png" width="624" height="177" /></a> แสดงการย้ายปุ่ม OTP ที่น่าจะทำให้ผู้ใช้ใช้งานได้ง่ายขึ้น[/caption]</p>
+<p>แนวโน้มการรับรู้ในสมองของผู้ใช้ก็มีโอกาสเป็นแบบนี้</p>
+<p>[caption id="attachment_600" align="aligncenter" width="677"]<a href="http://www.ux.in.th/?attachment_id=600" rel="attachment wp-att-600"><img class="size-full wp-image-600" alt="แสดง Operation Flow ของหน้าจอขอ OTP ใหม่" src="{{ site.baseurl }}/assets/propose-otp-operation-flow.png" width="677" height="185" /></a> แสดง Operation Flow ของหน้าจอขอ OTP ใหม่[/caption]</p>
+<p>ซึ่งย้ายการย้ายปุ่มนิดเดียวก็จะส่งผลมหาศาลต่อความคาดหวังของผู้ใช้ครับ</p>

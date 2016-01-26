@@ -1,0 +1,46 @@
+---
+layout: post
+title: ออกแบบ Tab บน Android (ตอนที่ 1)
+date: 2012-09-10 01:00:00.000000000 +07:00
+type: post
+published: true
+status: publish
+categories:
+- principle
+tags:
+- android
+- tab
+meta:
+  blogger_blog: www.ux.in.th
+  blogger_author: Apirak Panatkool
+  blogger_permalink: /2012/09/android-tab-path-1.html
+  _blogger_self: https://www.blogger.com/feeds/164893737343921889/posts/default/2655301890941719560
+  _edit_last: '4'
+  dsq_thread_id: '1005470896'
+  _wp_old_slug: '%e0%b8%ad%e0%b8%ad%e0%b8%81%e0%b9%81%e0%b8%9a%e0%b8%9a-tab-%e0%b8%9a%e0%b8%99-android-%e0%b8%95%e0%b8%ad%e0%b8%99%e0%b8%97%e0%b8%b5%e0%b9%88-1'
+  _popular_views: '677'
+author:
+  login: apirak
+  email: apirakb@gmail.com
+  display_name: Apirak Panatkool
+  first_name: Apirak
+  last_name: Panatkool
+---
+<p>การออกแบบ Tab บน Android มีปัญหาอยู่หลายประเด็นมากครับ เริ่มตั้งแต่นักพัฒนาไม่ทำตาม Guideline ของ Android แต่เอา Tab ไปไว้ด้านล่างตาม iPhone หรือประเด็นว่า Tab ของ Android เปลี่ยนไป เมื่อก่อนเป็น  Tab ใหญ่ๆ เดี๋ยวนี้เป็นแบบเล็กๆ มีแต่ตัวหนังสือไม่มีรูปอย่างเดียว หรือปัจจุบัน Guide line บอกให้สามารถใช้การลากนิ้วเพื่อเปลี่ยน Tab ได้ แต่เมื่อก่อนทำไม่ได้</p>
+<p style="text-align: center;"><a href="http://2.bp.blogspot.com/-R68LGaVQ2uc/UEqUHaVPN8I/AAAAAAAB--c/GPuC-Zw0xos/s1600/2012-08-30+17.35.06.png"><img alt="" src="{{ site.baseurl }}/assets/2012-08-30+17.35.06.png" width="320" height="90" border="0" /></a><br />
+ตัวอย่าง Tab ในปัจจุบัน</p>
+<p style="text-align: left;">เมื่อ Platform มีการเปลี่ยน Guideline นักพัฒนาที่คำนึงถึงผู้ใช้ก็ควรเปลี่ยนให้เหมือนกันโดยพร้อมเพรียงครับ ผู้ใช้จะได้ไม่สับสนและไม่ต้องเรียนรู้หลายๆ แบบ แต่ก็ใช่ว่าเราควรทำตาม Guideline แบบไม่รู้ที่มาที่ไป ไม่อย่างนั้นมันจะเป็นบาบติดตัวเราไปตลอดและทำให้งานออกแบบที่ปรับแก้ไปเรื่อยๆ เริ่มผิดพลาดได้</p>
+<p style="text-align: left;">ทีนี้เราลองมาดูที่มาที่ไปของ Guideline ของ Android กัน</p>
+<p style="text-align: left;"><!--more--></p>
+<p>เริ่มจากทำไม Tab ต้องขึ้นไปอยู่ด้านบน สามารถอ่านรายละเอียดได้ที่บทความ <a href="http://www.androiduipatterns.com/2011/07/tabs-top-or-bottom.html">tabs-top-or-bottom</a> โดยผมสรุปออกมาได้ 3 ข้อ</p>
+<ol>
+<li>ปกติการวางลำดับชั้นมักจะไล่จากบนลงล่าง ดังนั้น Tab ที่เป็นหัวข้อหลักจึงควรอยู่ลำดับชั้นบนสุด ซึ่งก็คือบนสุดของจอ</li>
+<li>App ที่ซับซ้อนมักจะมีลำดับชั้นมากกว่าหนึ่งขั้น การเอา Tab หลักไว้ด้านล่างแล้วมี Tab รองอยู่ด้านบนจะสร้างความสับสนให้ผู้ใช้ได้</li>
+<li>ผู้ใช้จะอ่านจากบนลงล่าง ดังนั้นผู้ใช้น่าจะเข้าใจลำดับชั้นของโปรแกรมได้ดีกว่าถ้า Tab อยู่ด้านบน</li>
+</ol>
+<p style="text-align: left;">ตัวอย่างเปรียบเทียบงานปรับแก้ของ <a href="https://play.google.com/store/apps/details?id=com.eurosport">eurosport</a> ที่เคยเอา Tab หลักไว้ด้านล่าง และมี Tab รองอยู่ด้านบน ทำให้ผู้ใช้ลำบากในการคาดเดาว่าตัวใดคือ Menu หลัก</p>
+<p style="text-align: center;"><a href="http://1.bp.blogspot.com/-inFi6c0uWW8/UEqUIiTVb7I/AAAAAAAB--k/8FLxY8Oc0n8/s1600/download+(19).png"><img alt="" src="{{ site.baseurl }}/assets/download+(19).png" border="0" /></a><a href="http://1.bp.blogspot.com/-4kjhmKe-Ckg/UEqUJqt2iSI/AAAAAAAB--s/ZPqq0pOZyas/s1600/download+(20).png"><img alt="" src="{{ site.baseurl }}/assets/download+(20).png" border="0" /></a><br />
+Application <a href="https://play.google.com/store/apps/details?id=com.eurosport">eurosport</a> เปลี่ยนจากแบบเก่าทางซ้ายไปเป็นแบบใหม่ทางขวา</p>
+<p>หลังจากการปรับแก้ทำให้ Tab ไปอยู่ด้านบน และแปลง Menu รอง ให้กลายเป็น Filter บน Titile Bar ทำให้โปรแกรมดูง่ายขึ้น ไม่สับสนระหว่า Tab ด้านบนและ Tab ด้านล่าง</p>
+<p>เพิ่มเติม: สำหรับคนที่พัฒนาโปรแกรมบน iPhone โดยมี Tab อยู่ด้านล่างก็ไม่ควรมี Tab ไว้ทั้งข้างบนและข้างล่างแบบ eurosport ตัวเก่านะครับ ควรจะแปลง Tab รองที่อยู่ด้านบนให้เป็น Filter บน Title bar แทน แล้วคง Tab ให้อยู่ด้านล่างแบบเดิมครับ เท่านี้ก็จะลดความสับสนได้แล้ว</p>
+<p>ที่มา: <a href="http://www.androiduipatterns.com/2012/08/tips-for-android-tabs.html">androiduipatterns.com</a></p>

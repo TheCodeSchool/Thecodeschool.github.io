@@ -1,0 +1,60 @@
+---
+layout: post
+title: คิดให้หนักถ้าจะบังคับผู้ใช้ให้ Register
+date: 2012-08-09 00:02:00.000000000 +07:00
+type: post
+published: true
+status: publish
+categories:
+- case study
+- recommend
+tags:
+- shop spot
+meta:
+  blogger_blog: www.ux.in.th
+  blogger_author: Apirak Panatkool
+  blogger_permalink: /2012/08/register.html
+  _blogger_self: https://www.blogger.com/feeds/164893737343921889/posts/default/7794214055403912666
+  _edit_last: '4'
+  dsq_thread_id: '986088753'
+  _wp_old_slug: '%e0%b8%84%e0%b8%b4%e0%b8%94%e0%b9%83%e0%b8%ab%e0%b9%89%e0%b8%ab%e0%b8%99%e0%b8%b1%e0%b8%81%e0%b8%96%e0%b9%89%e0%b8%b2%e0%b8%88%e0%b8%b0%e0%b8%9a%e0%b8%b1%e0%b8%87%e0%b8%84%e0%b8%b1%e0%b8%9a%e0%b8%9c'
+  _popular_views: '618'
+author:
+  login: apirak
+  email: apirakb@gmail.com
+  display_name: Apirak Panatkool
+  first_name: Apirak
+  last_name: Panatkool
+---
+<p>วันนี้ได้ลอง App ของคนไทยตัวนึง แล้วทำให้นึกถึงวีดีโอในงาน WWDC 2012 ที่พึ่งดูมาครับ มีอยู่ตอนนึงเค้าพูดถึงการออกแบบ Application บน iPhone โดยในนั้นจะมีคำแนะนำอยู่หลายข้อ ข้อที่ผมยกมาคือ ให้ระวังเรื่องการ "Force Register" คือ การที่พอผู้ใช้เปิด App เข้ามาก็เจอปุ่ม Sign Up!  ปุ่ม Sign In เลย แทนที่จะเจอเนื้อหาที่เค้าสนใจ</p>
+<p style="text-align: center;"><a href="http://2.bp.blogspot.com/-YYgV1cV1q1I/UCKHKEDwxPI/AAAAAAAB-M4/7IWeCkOwD78/s1600/Screen+Shot+2555-08-08+at+10.08.04+PM.png"><img alt="" src="{{ site.baseurl }}/assets/Screen+Shot+2555-08-08+at+10.08.04+PM.png" width="203" height="320" border="0" /></a><br />
+ภาพตัวอย่างหน้าแรกจาก WWDC 2012</p>
+<p>อย่างในรูปเป็น App ปลอม ที่เค้าทำปุ่มมาสองปุ่ม อันแรกเห็นชัดๆ คือ Sign Up! คือบอกให้สมัครสมาชิก ส่วนปุ่มที่สองคือ Sign in คือถ้าเป็นสมาชิกแล้วให้กดปุ่มนี้ แต่เค้าพบว่าผู้ใช้ส่วนใหญ่จะกดปุ่มที่สาม คือปุ่ม Home</p>
+<p>เพราะว่าผู้ใช้ยังไม่ได้รู้จักว่า App นี้ดีแค่ไหน เห็นใน App Store ว่าน่าสนใจก็ Download มา ถ้ามันเริ่มต้นก็ทำให้รำคาญ มันก็น่าจะหนีอยู่นะครับ</p>
+<p><!--more--></p>
+<p>แต่เค้าก็ไม่ได้บอกว่าทุก App ไม่ควรมี Force Register เพราะ App ของงาน WWDC ก็บังคับ Login หรือพวก App ที่เป็น Client ชัดเจนถ้าไม่ Login จะใช้งานไม่ได้เลยพวกนี้ก็ต้องให้ Login ก่อน</p>
+<p style="text-align: left;">ผมมองว่าถ้าเค้ามีฝั่ง Server ชัดเจนอยู่แล้วเช่น Facebook, Twitter พวกนี้จะบังคับให้ผู้ใช้ Login ก่อน ก็ไม่แปลก หรือพวก Line, Path จะบังคับ Register ก่อนก็เป็นเรื่องจำเป็น แต่จะมีบาง App เช่น Fondu เป็นต้น</p>
+<p style="text-align: center;">
+<a href="http://3.bp.blogspot.com/-E4xb_r6lS28/UCKHLD6Vr5I/AAAAAAAB-NA/bObl1U-0mpk/s1600/Screen+Shot+2555-08-08+at+10.21.20+PM.png"><img alt="" src="{{ site.baseurl }}/assets/Screen+Shot+2555-08-08+at+10.21.20+PM.png" width="197" height="320" border="0" /></a> <a href="http://4.bp.blogspot.com/-CcBUz8bgS5k/UCKHOFuHQ3I/AAAAAAAB-NQ/bFkpwZN68dY/s1600/Screen+Shot+2555-08-08+at+10.21.56+PM.png"><img alt="" src="{{ site.baseurl }}/assets/Screen+Shot+2555-08-08+at+10.21.56+PM.png" width="320" height="242" border="0" /></a></p>
+<p style="text-align: center;">￼Fondu: Dining Journal<br />
+First launch user experience</p>
+<p>Fondu เป็น App Social Network ด้านอาหาร มีหน้าให้ Login ก่อน ด้วย Facebook ตั้งแต่เปิดมาครั้งแรก แต่คนทำเค้ารู้ว่าจริงๆ แล้วผู้ใช้ไม่จำเป็นต้อง Login ก็สามารถอ่าน Review อาหารของคนอื่นๆ ได้ โดยกดที่คำว่า "Get a taste &gt;" โปรแกรมก็จะนำผู้ใช้ไปที่หน้ารายการอาหาร</p>
+<p>ไว้ตอนที่ผู้ใช้ต้องการจะ Share หรือ Review ตอนนั้นค่อยมา Register อีกที ตอนนั้นผู้ใช้จะมีกระใจที่จะ Register แล้ว เพราะรู้จัก App นี้แล้วและมีความต้องการจะทำอะไรบางอย่างอีกต่างหาก</p>
+<p>ทีนี้กลับมาที่ App ที่เป็นต้นประเด็นของ Post นี้</p>
+<p style="text-align: center;"><a href="http://4.bp.blogspot.com/-BSBdmeSgcXU/UCKGCvu0X8I/AAAAAAAB-Mo/7NBowVr-BvQ/s1600/Screen+Shot+2555-08-08+at+10.29.15+PM.png"><img alt="" src="{{ site.baseurl }}/assets/Screen+Shot+2555-08-08+at+10.29.15+PM.png" width="227" height="320" border="0" /></a> <a href="http://3.bp.blogspot.com/-O3j0k-Se5UQ/UCKGDsqOF6I/AAAAAAAB-Mw/0QuP3D1I7ds/s1600/Screen+Shot+2555-08-08+at+10.29.22+PM.png"><img alt="" src="{{ site.baseurl }}/assets/Screen+Shot+2555-08-08+at+10.29.22+PM.png" width="224" height="320" border="0" /></a><br />
+หน้าแรก และ หน้า Sign in ของ Shop*Spot</p>
+<p>Shop* Spot เป็น App personal e-commerce ซึ่ง concept ดีมากๆ ผมแนะนำให้ทุกคน Load มาใช้ครับ แต่มันมีประเด็นเรื่อง UX นิดหน่อยตามนี้ครับ</p>
+<p>ในหน้าแรกของโปรแกรมจะมีแถบริบบิ้นเขียนว่า Sign in ก่อน อันนี้เป็นด่านแรก ถ้าผมยังไม่มี Account อาจจะคิดว่า App นี้เป็นแบบ Member only หรือเปล่า เพราะไม่มีปุ่มให้ register และผมอาจจะกดปุ่ม Home หนีไปเลยก็ได้</p>
+<p>อีกปัญหาคือตัวริบบิ้นมันไม่ได้สื่อว่ากดได้ อาจจะเป็นการบอกว่าหน้านี้คือหน้า Sign in หรือจะให้ดึงริบบิ้น ไม่ได้ให้กด สมมุติว่าเดาถูกแล้วกด Sign in เข้ามาได้ ผมจะเจอหน้า Sign in ซึ่งแบ่งหน้าจอเป็นสองส่วน ส่วนบนจะมีช่องให้ใส่ Username และ Password พร้อมปุ่ม Create account ส่วนด้านล่างเป็น Sign in ด้วย Facebook พร้อมคำอธิบายว่าไม่ต้องกลัว</p>
+<p style="text-align: center;"><a href="http://3.bp.blogspot.com/-vM8IZ_RAKKA/UCKGAQrtvII/AAAAAAAB-MY/aqnYg07G5yY/s1600/Screen+Shot+2555-08-08+at+10.24.09+PM.png"><img alt="" src="{{ site.baseurl }}/assets/Screen+Shot+2555-08-08+at+10.24.09+PM.png" width="223" height="320" border="0" /></a><br />
+หน้าจอตอน Sigin in</p>
+<p>ผมทดลอง Sign in แต่แทนที่ผมจะกดปุ่ม Done ด้านบน ผมกลับกดปุ่ม Create account ด้วยความเคยชินว่า Form มักจะมีปุ่ม Submit อยู่ด้านล่าง มันเลยกระโดดเข้าไปหน้า Create account ต้องกดปุ่มกลับมา ถึงมามองดูว่ามีปุ่ม Done ด้านบนให้กดเมื่อพิมพ์ username และ password แล้ว</p>
+<p>ถึงตอนนี้ผมไม่อยาก Sign in ละ เลยตัดสินใจระหว่างหนี กับ login ด้วย facebook แทน ตรงจุดนี้ในส่วนของข้อความอธิบาย Facebook ผมมองว่าควรเน้นประโยคว่า "No worry...." มากกว่า "Use Facebook account" เพราะบนปุ่มก็เขียนว่า "Sign in with Facebook" อยู่แล้ว (ลองย้อนกลับไปดูภาพด้านบน)</p>
+<p>หลังจากเข้ามาได้ผมกลับพบว่า App ไม่ได้ใช้ข้อมูลบน Facebook ของผมมากนัก จะมีก็ Location ซึ่งอาจจะหาเอาจาก GPS แทนได้</p>
+<p style="text-align: center;">
+<a href="http://2.bp.blogspot.com/-uYFJnTRH60c/UCKGBLccLeI/AAAAAAAB-Mg/7k2JhcFeJR8/s1600/Screen+Shot+2555-08-08+at+10.24.49+PM.png"><img alt="" src="{{ site.baseurl }}/assets/Screen+Shot+2555-08-08+at+10.24.49+PM.png" width="225" height="320" border="0" /></a><br />
+หน้าจอหลังจาก Login</p>
+<p>ผมจึงมองว่าน่าจะเข้ากรณีเดียวกับวีดีโอของ WWDC ว่าถ้าข้ามขั้นตอน Login/Register ไปได้ก็ดี แล้วตอนที่เค้าต้องการ Sale หรือต้องการซื้อ ค่อยมา login อีกทีก็ยังทันครับ</p>
+<p>นอกเรื่องอีกนิดสำหรับ</p>
+<p>นอกจากนั้นจะมีเรื่อง "ตำแหน่งของปุ่มค้นหา" "ปุ่ม Filter" "ตัว Title ของ App" "การใช้ Header ของ Table"   icon บน tab bar ที่ทำให้ผมนำไปเทียบกับปุ่มที่เป็น Disable ตอนแรกก็งงๆ ว่ามันกดได้หรือเปล่า หรือต้องกรอกข้อมูลอะไรเพิ่มก่อนหรือเปล่าจึงจะสามารถกดได้</p>
+<p>ถ้ามีโอกาสน่าจะได้ยกขึ้นมาเป็นกรณีศึกษาอีก ผมคิดว่าการออกแบบของเค้าน่าจะมีเหตุผลรองรับอยู่แล้ว ต้องขอขอบคุณที่ทำ App ดีๆ ขึ้นมานะครับ และต้องขออภัยที่นำมาเป็นกรณีศึกษาโดยไม่ได้ขออนุญาติก่อนครับ</p>

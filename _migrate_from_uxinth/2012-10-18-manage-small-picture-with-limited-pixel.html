@@ -1,0 +1,45 @@
+---
+layout: post
+title: การจัดการกับภาพที่ถูกจำกัดรูปทรง
+date: 2012-10-18 21:17:00.000000000 +07:00
+type: post
+published: true
+status: publish
+categories:
+- principle
+tags:
+- before and after
+meta:
+  blogger_blog: www.ux.in.th
+  blogger_author: Apirak Panatkool
+  blogger_permalink: /2012/10/manage-small-picture-with-limited-pixel.html
+  _blogger_self: https://www.blogger.com/feeds/164893737343921889/posts/default/8712837524716383558
+  _edit_last: '4'
+  dsq_thread_id: '980820148'
+  _wp_old_slug: '%e0%b8%81%e0%b8%b2%e0%b8%a3%e0%b8%88%e0%b8%b1%e0%b8%94%e0%b8%81%e0%b8%b2%e0%b8%a3%e0%b8%81%e0%b8%b1%e0%b8%9a%e0%b8%a0%e0%b8%b2%e0%b8%9e%e0%b8%97%e0%b8%b5%e0%b9%88%e0%b8%96%e0%b8%b9%e0%b8%81%e0%b8%88'
+  _popular_views: '520'
+author:
+  login: apirak
+  email: apirakb@gmail.com
+  display_name: Apirak Panatkool
+  first_name: Apirak
+  last_name: Panatkool
+---
+<p>ในงานออกแบบเว็บ และ App เรามักเจอข้อจำกัดด้านพื้นที่ เช่น Banner ที่ต้องเป็นแบนๆ หรือส่วนหัวของเว็บที่ไม่ควรสูงมากนัก ทำให้ไม่สามารถแสดงรูปทั้งรูปได้ จนหลายครั้งเราต้องยอมปรับงานออกแบบของเรา</p>
+<p style="text-align: center;"><a href="http://3.bp.blogspot.com/-yIl1BPhqVtU/UIASDdltSZI/AAAAAAADNIA/IgqPblzMomI/s1600/Screen+Shot+2555-10-18+at+9.22.13+PM.png"><img alt="" src="{{ site.baseurl }}/assets/Screen+Shot+2555-10-18+at+9.22.13+PM.png" width="320" height="186" border="0" /></a><br />
+ตัวอย่างงานออกแบบส่วนหัวของเว็บ</p>
+<p>อย่างในตัวอย่างเค้าต้องการแสดงภาพอุปกรณ์เย็บผ้า แต่ภาพเป็นรูปสี่เหลี่ยมเลยต้องจับมาเบียดไว้ทางซ้าย แล้วเอาชื่อเว็บไว้ตรงกลาง</p>
+<p><!--more--></p>
+<p>แต่จริงๆ ภาพที่เราเห็นยังพอจะตัดให้เต็มชองได้ โดยเราดูบริบทที่สำคัญของภาพ แล้วเลือกตัดส่วนนั้นออกมา</p>
+<p style="text-align: center;"><a href="http://2.bp.blogspot.com/-jd6VtZRbC18/UIASlISoo3I/AAAAAAADNII/oDKnA3hisCY/s1600/Screen+Shot+2555-10-18+at+9.21.53+PM.png"><img alt="" src="{{ site.baseurl }}/assets/Screen+Shot+2555-10-18+at+9.21.53+PM.png" width="320" height="186" border="0" /></a></p>
+<p style="text-align: center;">ตัวอย่างงานออกแบบหัวเว็บที่ปรับแล้ว</p>
+<p>ในตัวอย่างจะเห็นว่าเราตัดภาพใหญ่เอามาเฉพาะส่วนตรงกลาง ซึ่งคงสิ่งสำคัญเอาไว้ เช่น เข็ม ด้าย สายวัด และอุปกรณ์ด้านหลัง ทำให้ภาพที่ถูกตัดออกยังคงสื่อสารได้ถูกต้อง และแสดงเต็มหน้าจออย่างสวยงาม</p>
+<p>อีกตัวอย่างหนึ่งคือ Banner ของ Coca-Cola</p>
+<p style="text-align: center;"><a href="http://1.bp.blogspot.com/-q7dYt6tRlQI/UIATNdFRVhI/AAAAAAADNIQ/oEukALLg4QE/s1600/Screen+Shot+2555-10-18+at+9.19.14+PM.png"><img alt="" src="{{ site.baseurl }}/assets/Screen+Shot+2555-10-18+at+9.19.14+PM.png" width="200" height="165" border="0" /></a>  <a href="http://4.bp.blogspot.com/-Z0RO97i6mxo/UIATRMEABnI/AAAAAAADNIY/ksnCoe0wYrE/s1600/Screen+Shot+2555-10-18+at+9.19.26+PM.png"><img alt="" src="{{ site.baseurl }}/assets/Screen+Shot+2555-10-18+at+9.19.26+PM.png" width="200" height="163" border="0" /></a></p>
+<p style="text-align: center;">ตัวอย่าง banner ของ Coca-cola และ ข้อความที่ส่งออกไป</p>
+<p>ในตัวอย่างจะเห็นว่าข้อความสำคัญคือทรงของขวด หยดน้ำ และคำว่า Coca-Cola ยังคงเอาไว้ครบใน Banner โดยไม่จำเป็นต้องตัดภาพทั้งขวดมาลง</p>
+<p>เทคนิคการตัดภาพ โดยเลือกเอาส่วนที่ช่วยส่งข้อความของเราเอาไว้ ทำให้เรามีอิสระในการจัดการกับภาพมากขึ้น และหลายครั้งช่วยให้เราผ่านข้อจำกัดเรื่องขนาดของหน้าจอ และจำนวน pixel ไปได้</p>
+<p>สำหรับใครที่ต้องการรายละเอียด สามารถดูได้จาก video นี้ครับ</p>
+<p style="text-align: center;"><iframe src="http://www.youtube.com/embed/wEWbebA3iUw?list=UUzPwyQHfUV-hjgaEELl6nyg&amp;hl=en_US" height="315" width="560" allowfullscreen="" frameborder="0"></iframe></p>
+<p style="text-align: center;">Video ของ Before &amp; After เรื่อง Extreme photo cropping</p>
+<p>เรื่องของ Graphic Design ก็ถือว่าเป็นเรื่องสำคัญมากๆ ในการทำ UX เพราะใครๆ ก็ชอบของสวยงาม ดังนั้นถ้าอยากให้ผู้ใช้รู้สึกดีก็ควรส่งมอบแต่สิ่งสวยงามให้ผู้ใช้ครับ</p>

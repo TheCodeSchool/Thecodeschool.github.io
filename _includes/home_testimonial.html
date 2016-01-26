@@ -1,0 +1,32 @@
+<div class="testimonial-background">
+  <div class="testimonial">
+    <div class="row">
+      <h2>Testimonial</h2>
+      <div class="col-md-12">
+        <div id="carousel-alumni" class="owl-carousel">
+          {% for member in site.data.alumni %}
+            <div class="item">
+              <div class="alumni">
+                <p class="dark">
+                  {{ member.feedback }}
+                </p>
+                <div class="profile">
+                  <img src="/images/alumni/{{ member.photo }}" />
+                  <div class="profile-text">
+                    {{ member.name }}<br/>
+                    <span class="company">
+                      {{ member.position }} <br/>
+                      <a href="{{ member.companyURL }}">
+                        @ {{ member.company }}
+                      </a>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

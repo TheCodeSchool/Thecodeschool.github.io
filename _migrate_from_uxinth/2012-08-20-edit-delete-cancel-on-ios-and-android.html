@@ -1,0 +1,51 @@
+---
+layout: post
+title: ความแตกต่างของหน้า Edit ระหว่าง iOS และ Android
+date: 2012-08-20 08:38:00.000000000 +07:00
+type: post
+published: true
+status: publish
+categories:
+- case study
+tags:
+- android
+- edit
+- iOS
+meta:
+  blogger_blog: www.ux.in.th
+  blogger_author: Apirak Panatkool
+  blogger_permalink: /2012/08/edit-delete-cancel-on-ios-and-android.html
+  _blogger_self: https://www.blogger.com/feeds/164893737343921889/posts/default/7135817745175300864
+  _edit_last: '4'
+  dsq_thread_id: '984493560'
+  _wp_old_slug: '%e0%b8%84%e0%b8%a7%e0%b8%b2%e0%b8%a1%e0%b9%81%e0%b8%95%e0%b8%81%e0%b8%95%e0%b9%88%e0%b8%b2%e0%b8%87%e0%b8%82%e0%b8%ad%e0%b8%87%e0%b8%ab%e0%b8%99%e0%b9%89%e0%b8%b2-edit-%e0%b8%a3%e0%b8%b0%e0%b8%ab'
+  _popular_views: '449'
+author:
+  login: apirak
+  email: apirakb@gmail.com
+  display_name: Apirak Panatkool
+  first_name: Apirak
+  last_name: Panatkool
+---
+<p>หน้าจอ Edit มักเป็นหน้าที่ถูกลืมตอนที่ออกแบบ User Interface เพราะมักเป็นหน้าจอที่ไม่สร้างคุณค่าให้กับโปรแกรม เราจึงใช้เวลาส่วนมากในการออกแบบส่วนที่สร้างคุณค่าและทิ้งหน้าจอ Edit ให้โปรแกรมเมอร์คิดเอาเอง โดยคาดหวังว่าโปรแกรมเมอร์ทำตามโปรแกรมอื่นๆ หรือทำตามที่ Guideline บอกไว้</p>
+<p>สำหรับบน iPhone คนออกแบบ User Interface อาจจะพอคิดแบบนั้นได้ เพราะมันมีรูปแบบที่เป็นที่นิยมของหน้า Edit อยู่</p>
+<p style="text-align: center;"><a href="http://1.bp.blogspot.com/-_1zpdajyQ9s/UDBmVVFkUwI/AAAAAAAB-cE/EvCX9xsliW8/s1600/Screen+Shot+2555-08-19+at+11.06.09+AM.png"><img alt="" src="{{ site.baseurl }}/assets/Screen+Shot+2555-08-19+at+11.06.09+AM.png" width="174" height="320" border="0" /></a><br />
+Apple Guideline</p>
+<p>ในรูปด้านบนเป็นโครงสร้างหน้าจอ Edit ที่นิยมบน iPhone เราจะเห็น Title ที่อยู่ตรงกลางเพื่อบอกว่าหน้านี้คืออะไร และมีปุ่ม Cancel Done อยู่ด้านซ้ายและขวา ส่วนปุ่ม Delete จะอยู่ล่างสุด หากหน้าจอ Edit ยาวกว่าหนึ่งหน้าจอ ปุ่ม Edit จะถูกดันจนมองไม่เห็นในหน้าแรก</p>
+<p><!--more--></p>
+<p>สำหรับ App บน iPhone เรายังพอจะบอกให้ Programmer ทำตามที่เค้านิยมกันได้ครับ แต่สำหรับบน Android เราต้องบอกให้ชัดเจนมากขึ้น เพราะยังไม่มีรูปแบบที่มาตรฐานหรือเป็นที่นิยมจริงๆ</p>
+<p style="text-align: center;"><a href="http://2.bp.blogspot.com/-adWC0ppjvKg/UDBmWvuqgsI/AAAAAAAB-cM/TqL1-cwPGmQ/s1600/Screen+Shot+2555-08-19+at+11.06.16+AM.png"><img alt="" src="{{ site.baseurl }}/assets/Screen+Shot+2555-08-19+at+11.06.16+AM.png" width="175" height="320" border="0" /></a><br />
+Android Ice Scream Sandwich (Edit contact)</p>
+<p>บน Android Ice Scream Sandwich รูปแบบข้างต้นน่าจะเป็นรูปแบบที่เป็นมาตรฐานต่อไปในอนาคต โดยปุ่ม Done อยู่ทางมุมบนขวา ส่วน Delete และ Discard จะขึ้นมาเมื่อกดปุ่ม Menu (ปุ่มที่เรียงเป็นแนวตั้งสามปุ่ม) หรือถ้าผู้ใช้กด System Back ก็จะได้ผลเหมือน Done</p>
+<p>รูปแบบนี้จะอันตรายต่อผู้ใช้มือใหม่ เพราะปุ่ม Discard ไม่ได้แสดงให้เห็นบนหน้าจอตั้งแต่ครั้งแรก อาจจะทำให้ผู้ใช้หลายคนคิดว่าปุ่ม System Back จะมีค่าเท่ากับ Discard ได้ครับ แต่ก็มีข้อดีที่ความเรียบร้อย เพราะมีปุ่ม Done บนหน้าจอเพียงปุ่มเดียว</p>
+<p style="text-align: center;"><a href="http://3.bp.blogspot.com/-rVKNexoXH38/UDBkSLzAkJI/AAAAAAAB-bw/D80tS9dCrp0/s1600/Screen+Shot+2555-08-19+at+10.57.20+AM.png"><img alt="" src="{{ site.baseurl }}/assets/Screen+Shot+2555-08-19+at+10.57.20+AM.png" width="175" height="320" border="0" /></a><br />
+Android Gingerbread (Edit contact)</p>
+<p>อีกรูปแบบนึงจะมีปุ่ม Cancel และ Save ติดอยู่ด้านล่าง อันนี้เป็นหน้าจอ Edit สมัย Android Gingerbread ซึ่งผู้ใช้ที่ยังเป็นรุ่นนี้อยู่จะเคยชินกับปุ่มแบบนี้ ถ้าให้ดีเราควรตรวจสอบว่าผู้ใช้ นั้นใช้ระบบอะไรอยู่และแสดงหน้าจอ Edit ในแบบที่เค้าคุ้นเคยครับ อาจจะเป็นงานหนักแต่ถ้าใครใส่ใจต่อ User Experience ของคนที่ใช้ระบบเก่า ก็ควรทำครับ</p>
+<p style="text-align: center;"><a href="http://1.bp.blogspot.com/-rHPPZC3Wu0A/UDBkS4TyiiI/AAAAAAAB-b4/G3q3OpAVmXw/s1600/Screen+Shot+2555-08-19+at+10.57.27+AM.png"><img alt="" src="{{ site.baseurl }}/assets/Screen+Shot+2555-08-19+at+10.57.27+AM.png" width="173" height="320" border="0" /></a><br />
+Android <a href="https://play.google.com/store/apps/details?id=ch.teamtasks.tasks.paid" target="_blank">Tasks</a> (Edit task)</p>
+<p>แบบสุดท้ายเป็นตัวอย่างของโปรแกรม <a href="https://play.google.com/store/apps/details?id=ch.teamtasks.tasks.paid" target="_blank">Tasks</a> บน Android โปรแกรมนี้สร้างรูปแบบของหน้า Edit ขึ้นมาเอง แม้ว่าจะทำตาม Guideline ของ Android แต่ก็ไม่เหมือนหน้า Edit ของโปรแกรมที่ Google ทำขึ้นมา</p>
+<p>ในหน้าจอนี้ผู้ใช้สามารถบอกให้โปรแกรม Save ได้สามที่ จุดที่แรกคือกดเครื่องหมาย &lt; มุมบนซ้าย ข้างๆ โลโก้  จุดที่สองคือเครื่องหมายถูกที่มุมบนขวา จุดที่สามคือกดที่ปุ่ม system back</p>
+<p>ถ้าผู้ใช้ต้องการลบ ให้กดที่รูปถังขยะข้างๆ เครื่องหมายกากบาท และถ้าต้องการยกเลิกการแก้ไขให้กดที่เครื่องหมายกากบาทครับ</p>
+<p>หน้าจอนี้แก้ปัญหาที่ delete และ discard ถูกซ่อนเอาไว้ได้ แต่ก็มีปัญหาตามมาคือปุ่มทั้งสามอันอยู่เรียงชิดติดกันทำให้กดผิดได้ง่าย และเครื่องหมายกากบาทอาจจะไม่สื่อว่าเป็นการลบ หรือการยกเลิก</p>
+<p>สำหรับใครก็ตามที่กำลังออกแบบ User Interface อย่าลืมวาดหน้า Edit ให้ Programmer ด้วยนะครับ</p>
+<p>อ่านเพิ่มเติมได้ที่ <a href="http://www.androiduipatterns.com/" target="_blank">androiduipatterns.com</a></p>

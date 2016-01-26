@@ -1,0 +1,52 @@
+---
+layout: post
+title: ออกแบบ Tab บน Android (ตอนที่ 3)
+date: 2012-09-12 08:00:00.000000000 +07:00
+type: post
+published: true
+status: publish
+categories:
+- principle
+tags:
+- android
+- tab
+meta:
+  blogger_blog: www.ux.in.th
+  blogger_author: Apirak Panatkool
+  blogger_permalink: /2012/09/android-tab-path-3.html
+  _blogger_self: https://www.blogger.com/feeds/164893737343921889/posts/default/6185133484538003493
+  _edit_last: '4'
+  dsq_thread_id: '994781955'
+  _wp_old_slug: '%e0%b8%ad%e0%b8%ad%e0%b8%81%e0%b9%81%e0%b8%9a%e0%b8%9a-tab-%e0%b8%9a%e0%b8%99-android-%e0%b8%95%e0%b8%ad%e0%b8%99%e0%b8%97%e0%b8%b5%e0%b9%88-3'
+  _popular_views: '580'
+author:
+  login: apirak
+  email: apirakb@gmail.com
+  display_name: Apirak Panatkool
+  first_name: Apirak
+  last_name: Panatkool
+---
+<p><a href="http://www.ux.in.th/2012/09/android-tab-path-1.html">ตอนที่ 1</a> และ <a href="http://www.ux.in.th/2012/09/android-tab-path-2.html">ตอนที่ 2</a> เราพูดถึงเรื่องตำแหน่ง และ Style ในการออกแบบ Tab บน Android มาถึงตอนที่สามเราจะมาเก็บรายละเอียดกัน บางทีสิ่งที่อยู่ในตอนที่สามนี่ละ ที่เป็นหัวใจของ UX ที่สามารถนำไปใช้ได้ในทุก Platform</p>
+<p><b>ข้อแรก Tab มีไว้ใช้สำหรับนำทาง (Navigation) ไม่ใช่การกระทำ (Action)</b></p>
+<p>Tab ทั้ง Android และ iPhone ต่างเอาไว้สำหรับการนำทาง (navigate) ไปยังหน้าจอต่างๆ ใน App ดังนั้นไม่ควรนำปุ่มสั่งงานมาไว้ที่ Tab</p>
+<p style="text-align: center;"><a href="http://2.bp.blogspot.com/-rZdYIhGWAns/UErEV_LUKqI/AAAAAAAB_AM/lz7zrK84Qs4/s1600/tabs-1.png"><img alt="" src="{{ site.baseurl }}/assets/tabs-1.png" width="320" height="132" border="0" /></a><br />
+ตัวอย่างการใช้ Tab ที่ผิด</p>
+<p>ในภาพตัวอย่างจะเห็นว่านักพัฒนาเอา  Action มาปนอยู่ใน Navigation  บาง Tab ทำให้หน้าจอเปลี่ยน บาง Tab เป็นการสั่งงานไม่ได้พาผู้ใช้ไปหน้าจอไหนเลย ลักษณะนี้จะสร้างความสับสับให้ผู้ใช้ได้ครับ</p>
+<p><b>Tab ต้องถูกเลือกอยู่ตลอดเวลา</b></p>
+<p>ต้องมี Tab ใด Tab หนึ่งแสดงว่าตัวเองถูกเลือกอยู่ เพราะเราต้องการบอกผู้ใช้ว่าตอนนี้เค้าอยู่ตรงส่วนไหนของโปรแกรม และทำให้เค้าสามารถกลับมาได้ถูกต้องเมื่อไปที่ Tab อื่น</p>
+<p><!--more--></p>
+<p>เงื่อนไขข้อนี้จะไปเสริมกับเงือนไขข้อแรกว่า ปกติผู้ใช้กดบน Tab แล้ว Tab นั้นจะเปลี่ยนสีค้างไว้เพื่อแสดงว่าผู้ใช้อยู่บน Tab นี้ แต่ถ้า Tab นั้นกลายเป็น Action ผู้ใช้กดเท่าไหรก็ไม่สามารถเข้ามาสู่ Tab นั้นได้ จะทำให้ผู้ใช้จะรู้สึกเหมือนหลงทางได้ครับ</p>
+<p><b>การใช้ Back กับ Tab</b></p>
+<p>การเปลี่ยน Tab ไม่ถือว่าเป็นการเปลี่ยนหน้าสำหรับ android ถ้าผู้ใช้กดปุ่ม Back โปรแกรมจะนำผู้ใช้ออกไปจากโปรแกรมหรือกลับไปที่หน้าก่อนหน้าที่มี Tab นี้อยู่</p>
+<p>ที่เป็นแบบนี้เพราะว่าแนวคิดของปุ่ม Back ของ Android คือการกลับจากหน้ารองไปสู่หน้าหลัก ดังนั้นการเปลี่ยน Tab ไม่ได้ไปสู่หน้ารอง แต่เป็นการไปอีก tab หนึ่งและสามารถกลับมาหน้าเดิมได้ด้วยการกดบน Tab ไม่จำเป็นต้องใช้ปุ่ม Back</p>
+<p>การเปลี่ยน Tab ด้วย Swipe!</p>
+<p>บน Android 4.x ผู้ใช้สามารถเปลียน Tab ได้ด้วยการลากนิ้วมือไปทางซ้าย/ขวา จะเป็นการเปลี่ยน Tab ได้ ดังนั้นนักพัฒนาจะต้องระวังเรื่อง Transition ให้ดี ในกรณีของ iPhone เมื่อผู้ใช้กดบนหัวข้อจะเกิด Transition ว่าหน้าจอเนื้อหาไหลจากทางซ้ายเข้ามา แต่บน Android ถ้าทำแบบนั้นผู้ใช้อาจจะรู้สึกว่าอีก Tab นึงมันเลื่อนเข้ามา ซึ่งทำให้การรับรู้ผิดไป</p>
+<p>เขียนครั้งเดียวใช้ได้ทั้งจอเล็ก จอใหญ่</p>
+<p style="text-align: center;">เมื่อเป็นจอเล็ก Tab จะลงมาเป็นบรรทัดที่สอง แต่ถ้าเป็นจอใหญ่เนื้อที่ด้านบนมีมาก ให้เอา Tab ขึ้นไปอยู่ด้านบน นอกจากนั้นสำหรับจอใหญ่ให้เอาเนื้อหาในหน้าที่สองมาไว้ข้างขวาบนหน้าแรกได้เลย<br />
+<a href="http://4.bp.blogspot.com/-zTiWPUlw3Eg/UErESJXZtfI/AAAAAAAB-_8/XXnsBA4JuYI/s1600/download+(26).png"><img alt="" src="{{ site.baseurl }}/assets/download+(26).png" width="320" height="215" border="0" /></a><a href="http://2.bp.blogspot.com/-9VB6zSQzp_M/UErEUszwx5I/AAAAAAAB_AE/YbJWt2Yc3Kw/s1600/download+(27).png"><img alt="" src="{{ site.baseurl }}/assets/download+(27).png" width="184" height="320" border="0" /></a><br />
+ตัวอย่าง App ในงาน google IO</p>
+<p>สรุปว่า</p>
+<p>Tab จะดีได้เราต้องพัฒนาออกมาให้ตรงตาม Guide line ด้วย แต่เนื่องจาก Tab ในแต่ละ Platform ทำงานไม่เหมือนกันดังนั้นขอให้นักพัฒนาระวังไว้ดีๆ ห้ามเอาประสบการณ์จาก Platform อื่นมาตัดสินเพราะถ้าทำผิดจาก Guideline จะทำให้ผู้ใช้สับสน ในทางตรงกันข้าม ถ้าทำได้ตาม Guideline ผู้ใช้จะไม่สับสนและรู้สึกดีกับระบบนำทางในโปรแกรมของคุณ</p>
+<p>อย่าลืมว่าเราไม่ใช่ผู้ใช้ ต้องพยายามจิตนาการผู้ใช้ตัวจริงออกมาให้ได้นะครับ</p>
+<p>ที่มา: <a href="http://www.androiduipatterns.com/2012/08/tips-for-android-tabs.html">www.androiduipatterns.com/2012/08/tips-for-android-tabs.html</a></p>
+<p>&nbsp;</p>

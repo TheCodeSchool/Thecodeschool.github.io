@@ -1,0 +1,54 @@
+---
+layout: post
+title: 4 อย่างที่ห้ามพลาด เมื่อย้ายจาก iOS ไปออกแบบ App บน Android
+date: 2012-08-10 22:47:00.000000000 +07:00
+type: post
+published: true
+status: publish
+categories:
+- case study
+tags:
+- android
+- iOS
+meta:
+  blogger_blog: www.ux.in.th
+  blogger_author: Apirak Panatkool
+  blogger_permalink: /2012/08/ios-app-android.html
+  _blogger_self: https://www.blogger.com/feeds/164893737343921889/posts/default/2212852912692895847
+  _edit_last: '4'
+  dsq_thread_id: '996901156'
+  _wp_old_slug: 4-%e0%b8%ad%e0%b8%a2%e0%b9%88%e0%b8%b2%e0%b8%87%e0%b8%97%e0%b8%b5%e0%b9%88%e0%b8%ab%e0%b9%89%e0%b8%b2%e0%b8%a1%e0%b8%9e%e0%b8%a5%e0%b8%b2%e0%b8%94-%e0%b9%80%e0%b8%a1%e0%b8%b7%e0%b9%88%e0%b8%ad
+  _popular_views: '471'
+author:
+  login: apirak
+  email: apirakb@gmail.com
+  display_name: Apirak Panatkool
+  first_name: Apirak
+  last_name: Panatkool
+---
+<p>แต่ละ Platform ต่างก็มี Guideline เป็นของตนเองครับ สำหรับ Android ดูเหมือนจะพึ่งเริ่มนิ่ง ตอนนี้เลยเป็นเวลาที่เหมาะมากที่จะมาวิเคราะห์กันครับ</p>
+<p>สำหรับคนที่ออกแบบ App บน iOS มาก่อน ผมมองว่าวินาทีนี้ Concept สำคัญที่ต่างกันมากๆ ระหว่าง iOS กับ Android ก็ตรงที่ Android เน้นให้ออกแบบทีเดียว ทำงานได้กับ Device ทุกแบบ ส่วนของ iOS จะเน้นให้ออกแบบ App ให้เหมาะกับแต่ละ Device (ซึ่งมีแค่ iPad กับ iPhone) เลยทำให้การออกแบบบน Android จะมีเงื่อนไขเรื่องการปรับเปลี่ยนหน้าจอแบบอัตโนมัติเข้ามาด้วย</p>
+<p>นั่นทำให้ความเข้าใจหลายอย่างที่อยู่บน iOS ไม่สามารถนำมาใช้กับ Android ได้ ถ้าจะไม่สนใจก็ไม่ได้เพราะถ้าไม่เข้าใจก็จะออกแบบโปรแกรมตาม Guideline ไม่ได้ ทำให้ผู้ใช้ต้องเสียเวลาเรียนรู้การใช้งานของ App เรา ทั้งๆ ที่ถ้าเราทำตาม Guideline เวลาที่ผู้ใช้ชินกับ App อื่นๆ แล้ว เค้าจะสามารถเดาการทำงานของ App เราได้เลยโดยไม่ต้องทำความเข้าใจใหม่</p>
+<p>ทีนี้เท่าที่ผมลองไล่ดู มี 4 อย่างที่คนทำ iOS มาก่อนควรทำความเข้าใจ และระลึกอยู่เสมอเวลาที่ออกแบบ App บน Android ครับ</p>
+<p><b>1. Tab ของ Android อยู่ด้านบน</b></p>
+<div style="text-align: center;"><a href="http://2.bp.blogspot.com/-u37wElmY4JA/UB_CHYFzkqI/AAAAAAAB-CE/OBh7gOLWLkE/s1600/gesture_swipe.png"><img alt="" src="{{ site.baseurl }}/assets/gesture_swipe.png" border="0" /></a></div>
+<div style="text-align: center;">การลากนิ้วเพื่อเปลี่ยน Tab</div>
+<p>บน iOS ตัว Tab สำหรับเปลี่ยนหน้าต่างจะอยู่ด้านล่าง ส่วนบน Android จะอยู่ด้านบน และเมื่อผู้ใช้ลากนิ้วไปทางซ้ายหรือขวา จะเป็นการเปลี่ยน Tab</p>
+<p><b>2.  Android มีปุ่ม Back และ ปุ่ม Up</b> โดยปุ่ม Back จะของเป็นของ System อยู่ด้านล่าง ส่วนปุ่มที่อยู่ในตำแหน่ง Back ของ iOS เราจะเรียกว่าปุ่ม Up</p>
+<div style="text-align: center;"><a href="http://2.bp.blogspot.com/-n0zYx964bD8/UB_DGOtKwqI/AAAAAAAB-CM/AUEfKrsEq6g/s1600/navigation_between_siblings_gmail.png"><img alt="" src="{{ site.baseurl }}/assets/navigation_between_siblings_gmail.png" width="292" height="320" border="0" /></a></div>
+<div style="text-align: center;">แสดงการทำงาน และตำแหน่งของปุ่ม Back และ Up</div>
+<p>ในรูปแสดงการทำงานของโปรแกรม Mail โดยเริ่มที่หน้าแสดงรายการจดหมาด เมื่อมีการกดที่จดหมายฉบับใด โปรแกรม Mail จะแสดงหน้าเนื้อหาของจดหมายนั้น และผู้ใช้สามารถกด next เพื่อดูจดหมายถัดไปได้ หากกดปุ่ม Back ที่อยู่ด้านล่าง โปรแกรม Mail จะแสดงจดหมายหน้าที่ผ่านมา แต่ถ้ากดปุ่ม Up ที่อยู่ด้านบน โปรแกรมจะกลับไปหน้า แสดงรายการจดหมาย ต่างจากโปรแกรม iOS ที่ปุ่มด้านบนทำหน้าที่เป็นปุ่ม Bak</p>
+<p><b>3. การจัดวางตำแหน่งบน Toolbar</b></p>
+<div style="text-align: center;"><a href="http://1.bp.blogspot.com/-KKXEi_RYOX0/UB_E1YRz83I/AAAAAAAB-CU/BwNIqd-aBkY/s1600/action_bar_basics.png"><img alt="" src="{{ site.baseurl }}/assets/action_bar_basics.png" width="640" height="99" border="0" /></a></div>
+<div style="text-align: center;">ตำแหน่งต่างๆ บน toolbar</div>
+<div></div>
+<p>บน iOS ตัว Toolbar ด้าย ซ้ายมักจะเป็นการกลับไปหน้าก่อนหน้า หรือหน้าด้านซ้ายมือ ส่วนด้านขวาจะเป็น Action สำหรับ page นั้นๆ เช่น Add, Filter, Edit เป็นต้น ส่วนตรงกลางจะแสดงชื่อของหน้านั้นๆ</p>
+<p>แต่ของ Android จะเรียงไม่เหมือนกันครับ (1) ด้านซ้ายมือของ Android จะแสดง icon ของ App เพื่อบอกผู้ใช้ว่ากำลังใช้ App อะไรอยู่ (2) ถัดจาก icon จะยังชิดซ้ายเหมือนกัน คือ ช่องที่ใช้เลือกและแสดงว่าตอนนี้ข้อมูลที่แสดงอยู่ด้านล่างเป็นข้อมูลอะไร (3) ชิดขวาจะเป็น Action ของเนื้อหาด้านล่าง (4) เป็น Menu เพิ่มตามถ้าพื้นที่แสดง Action ไม่พอ</p>
+<div style="text-align: center;"><a href="http://4.bp.blogspot.com/-FmTLJM5PInw/UB_E3o1DdAI/AAAAAAAB-Cc/S1DLj62-2do/s1600/action_bar_pattern_rotation.png"><img alt="" src="{{ site.baseurl }}/assets/action_bar_pattern_rotation.png" width="640" height="403" border="0" /></a></div>
+<div style="text-align: center;">การแสดง Toolbar บนหน้าจอต่างๆ</div>
+<p>ในกรณีที่พื้นที่แสดง Action ไม่พอเราจะดันให้มาอยู่ด้านล่าง ดังรูปครับ</p>
+<p><b>4. ถ้าคิดจะทำ UI Element เอง ให้คิดให้หนักๆ</b> ไม่ใช่ว่าของ iOS จะคิดน้อย เพราะต้องคำนึงถึง Accessibility และ พฤติกรรมของตัว Element นั้นๆ แต่ของ Android นั้นอาจจะถึงขั้นไม่สามารถคิดได้ เพราะนักพัฒนาจะต้องทำให้ Element ที่ตัวเองสร้างขึ้นมาสามารถทำงานบนอุปกรณ์ที่แตกต่างกันให้ได้ และอาจจะต้องรองรับอุปกรณ์ที่ยังไม่มีในปัจจุบัน</p>
+<div style="text-align: center;"><a href="http://1.bp.blogspot.com/-2FmUqeMD9U8/UB_gkE3c30I/AAAAAAAB-DE/iZ-0ikvJxM4/s1600/compatibility_legacy_apps.png"><img alt="" src="{{ site.baseurl }}/assets/compatibility_legacy_apps.png" width="200" height="190" border="0" /></a><a href="http://2.bp.blogspot.com/-kabtz8-EZ5g/UB_g0j6McUI/AAAAAAAB-DM/GW7H_JuMC6g/s1600/compatibility_physical_buttons.png"><img alt="" src="{{ site.baseurl }}/assets/compatibility_physical_buttons.png" width="200" height="177" border="0" /></a><a href="http://4.bp.blogspot.com/-quz-jUXkhyQ/UB_g9diO98I/AAAAAAAB-DU/jrdoL4ovRvA/s1600/compatibility_virtual_nav.png"><img alt="" src="{{ site.baseurl }}/assets/compatibility_virtual_nav.png" width="200" height="192" border="0" /></a></div>
+<div style="text-align: center;">ตัวอย่างตำแหน่งของ Menu บนอุปกรณ์ที่ต่างกัน</div>
+<p>ในภาพตัวอย่าง สมมุติว่าเราอยากจะสร้างปุ่ม Menu ขึ้นมาใหม่ ให้เข้ากับหน้าจอ เช่นให้มีสีรุ้งแทนที่จะเป็นสีขาว เราต้องทำให้แน่ใจว่าจุดสีรุ้งของเราจะแสดงผลได้ถูกต้องเมื่อมันอยู่บนอุปกรณ์ที่ต่างกัน ทั้งแบบที่อยู่ด้านบน อยู่ด้านล่าง หรือหายไปเลย</p>
+<p>ทั้งนี้ใครต้องการจะรู้รายละเอียดเพื่อออกแบบ App บน Android ให้เข้ากับ Ecosystem ของมัน แนะนำให้อ่าน <a href="http://developer.android.com/design/patterns/index.html" target="_blank">android pattern</a> ครับ ส่วนใครที่ยังไม่เคยออกแบบบน iOS ผมแนะนำว่าก่อนจะอ่าน Android ควรลองอ่าน <a href="http://developer.apple.com/library/ios/#documentation/userexperience/conceptual/mobilehig/Introduction/Introduction.html" target="_blank">HIG ของ iOS</a> ก่อนครับ ในนั้นมีทฤษฏีที่มีประโยชน์อยู่มากมายทีเดียว</p>

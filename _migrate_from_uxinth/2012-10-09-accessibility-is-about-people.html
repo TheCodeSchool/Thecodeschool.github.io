@@ -1,0 +1,45 @@
+---
+layout: post
+title: ใส่ใจกับความเท่าเทียมกัน
+date: 2012-10-09 13:00:00.000000000 +07:00
+type: post
+published: true
+status: publish
+categories:
+- case study
+tags:
+- accessibility
+- iOS
+meta:
+  blogger_blog: www.ux.in.th
+  blogger_author: Apirak Panatkool
+  blogger_permalink: /2012/10/accessibility-is-about-people.html
+  _blogger_self: https://www.blogger.com/feeds/164893737343921889/posts/default/4294265095313260299
+  _edit_last: '4'
+  dsq_thread_id: '980852098'
+  _wp_old_slug: '%e0%b9%83%e0%b8%aa%e0%b9%88%e0%b9%83%e0%b8%88%e0%b8%81%e0%b8%b1%e0%b8%9a%e0%b8%84%e0%b8%a7%e0%b8%b2%e0%b8%a1%e0%b9%80%e0%b8%97%e0%b9%88%e0%b8%b2%e0%b9%80%e0%b8%97%e0%b8%b5%e0%b8%a2%e0%b8%a1%e0%b8%81'
+  _popular_views: '473'
+  mytory_md_visits_count: '1'
+author:
+  login: apirak
+  email: apirakb@gmail.com
+  display_name: Apirak Panatkool
+  first_name: Apirak
+  last_name: Panatkool
+---
+<p>OS ที่ใส่ใจเรื่องความเท่าเทียมกัน จะมาพร้อมกับความสามารถด้าน Accessibility ทั้งงานด้านเทคนิค และงานออกแบบ ตัว Control ที่ออกมาจะต้องได้รับการทดสอบว่ายังสามารถทำงานได้ดีใน Accessibility Mode ด้วย เราลองมาดูตัวอย่างของ iOS กันก่อน</p>
+<p style="text-align: center;"><a href="http://3.bp.blogspot.com/-xmQ-f1rv4hY/UHLkeGzsG-I/AAAAAAADG-c/1pHHwsOouDQ/s1600/IMG_1409.PNG"><img alt="" src="{{ site.baseurl }}/assets/IMG_1409.PNG" width="213" height="320" border="0" /></a>  <a href="http://2.bp.blogspot.com/-h75Yz5oI_J8/UHLkfGzh_xI/AAAAAAADG-k/Iqw-1cmcJq8/s1600/IMG_1409_invert.png"><img alt="" src="{{ site.baseurl }}/assets/IMG_1409_invert.png" width="213" height="320" border="0" /></a><br />
+ตัวอย่างการกลับภาพ ขาวเป็นดำ ของ iOS</p>
+<p>สำหรับคนที่สายตาไม่ดี การกลับภาพขาวเป็นดำ จะช่วยให้สามารถมองภาพได้ชัดมากขึ้นครับ ดังนั้นถ้างานออกแบบทำออกมาโดยคำนึงถึงเรื่องนี้ เมื่อกลับภาพขาวเป็นดำ ตัว Control จะยังคงความหมายที่ถูกต้องเอาไว้</p>
+<p><!--more--></p>
+<p>ตัวอย่าง Control ของ iOS จะยังคงความหมายเดิมอยู่ เช่น ปุ่ม ON/OFF ที่เป็น ON จะแสดงสีสว่างให้รู้ว่าเปิดอยู่ ส่วนที่เป็น OFF จะแสดงสีกลืนไปเดียวกับพื้นหลังให้รู้ว่ามันไม่ได้ทำงาน นอกจากนั้นตัวหนังสือก็สามารถอ่านได้อย่างชัดเจนด้วย</p>
+<p>เช่นเดียวกัน scroll bar ผู้ใช้จะรู้ได้ทันทีว่าด้านที่เป็น value อยู่ด้านซ้ายหรือขวา โดยดูจากสีเข้ม/สว่าง ทั้งแบบที่ธรรมดาและแบบกลับขาวเป็นดำ</p>
+<p style="text-align: center;"><a href="http://4.bp.blogspot.com/-hwkc-lEL7yo/UHLktUZBucI/AAAAAAADG-0/ZAjpv7M-xFg/s1600/Android-Jelly-Bean-User-Management-5.jpg"><img alt="" src="{{ site.baseurl }}/assets/Android-Jelly-Bean-User-Management-5.jpg" width="192" height="320" border="0" /></a>  <a href="http://2.bp.blogspot.com/-ZnDd7YCc8jg/UHLksdg5n5I/AAAAAAADG-s/GG0lJwnU_t0/s1600/Android-Jelly-Bean-User-Management-5-invert.png"><img alt="" src="{{ site.baseurl }}/assets/Android-Jelly-Bean-User-Management-5-invert.png" width="192" height="320" border="0" /></a><br />
+ตัวอย่างการกลับขาวเป็นดำของ Android</p>
+<p>สำหรับ Android ตัว UI ก็ได้รับการออกแบบให้รองรับแล้วเช่นกัน เราจะเห็นว่าสีที่เป็น ON จะแตกต่างจากสีอื่นๆ แม้ว่าตัวหนังสือ ON/OFF จะอ่านไม่ค่อยชัด แต่ก็ถือว่าอ่านออกครับ</p>
+<p>แต่สำหรับใครก็ตามที่คิดจะวาด controller ขึ้นมาเอง อยากให้แน่ใจว่าได้ทดสอบเรื่อง Accessibility แล้วนะครับ</p>
+<p style="text-align: center;"><a href="http://3.bp.blogspot.com/-adhKsA_jMLM/UHLllsolALI/AAAAAAADG_E/4LdnFEKXxKs/s1600/3-100.png"><img alt="" src="{{ site.baseurl }}/assets/3-100.png" width="255" height="320" border="0" /></a>  <a href="http://2.bp.blogspot.com/-5p6AXmAg7Jk/UHLldrvTH1I/AAAAAAADG-8/MN03T-1kcdY/s1600/3-100+invert.png"><img alt="" src="{{ site.baseurl }}/assets/3-100+invert.png" width="255" height="320" border="0" /></a><br />
+ตัวอย่าง control ที่สร้างเอง</p>
+<p>ในตัวอย่างเป็น Control ที่สร้างขึ้นมาเอง จะเห็นว่ามีเฉพาะตัวที่สองเท่านั้นที่สามารถชื่อความหมายของการเปิดและปิดได้ ส่วนแบบที่เหลือเหมือกลับขาวเป็นดำ เราจะมองไม่ออกว่าอันไหนเปิดอันไหนปิดเพราะผู้ใช้เห็นเป็นสีสว่างเหมือนกัน ผู้ใช้ที่มองไม่เห็นสีแดง/สีเขียวจึงไม่รู้ว่าสีไหนคือเปิด สีไหนคือปิด</p>
+<p>นอกจากคนที่สายตาไม่ดีแล้วคนที่ตาบอดสีก็มีปัญหานี้ไปด้วยครับ เพราะฉะนั้นถ้าไม่จำเป็นเราไม่ควรออกแบบ Control ขึ้นมาใหม่ เพราะนอกจากจะทำให้ผู้ใช้ต้องเรียนรู้เพิ่มแล้ว ยังเพิ่มโอกาสที่จะทำให้ Accessibility ไม่สมบูรณ์ด้วย</p>
+<p>สุดท้ายที่อยากฝากไว้คือการทำ Accessibilty ที่ดีไม่ใช่การทำตาม Guideline เพราะ Accesibility ไม่ใช่เรื่องของ Guideline แต่มันเป็นเรื่องของคน ถ้าเราใส่ใจในความเท่าเทียมกันของคน เราจะได้ Accessibility ที่ดีมากเองครับ</p>

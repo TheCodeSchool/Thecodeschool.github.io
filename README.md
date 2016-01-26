@@ -1,1 +1,3 @@
-Source files from [joshgerdes.com](http://joshgerdes.com)
+# uxacademy.github.io
+
+All information about UXAcademy and blog knowledge

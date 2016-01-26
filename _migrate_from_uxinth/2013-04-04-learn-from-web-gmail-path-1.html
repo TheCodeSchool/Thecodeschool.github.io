@@ -1,0 +1,60 @@
+---
+layout: post
+title: เรียนรู้จาก Mobile Web Gmail ตอนที่ 1
+date: 2013-04-04 23:58:27.000000000 +07:00
+type: post
+published: true
+status: publish
+categories:
+- case study
+tags:
+- gmail
+- mobile
+- web
+meta:
+  _edit_last: '4'
+  _popular_views: '1400'
+  author_recommended_posts: a:4:{i:0;s:3:"725";i:1;s:2:"74";i:2;s:2:"45";i:3;s:2:"76";}
+  _wpas_done_all: '1'
+  dsq_thread_id: '1186719603'
+  _wpas_skip_2477638: '1'
+  mytory_md_visits_count: '4'
+author:
+  login: apirak
+  email: apirakb@gmail.com
+  display_name: Apirak Panatkool
+  first_name: Apirak
+  last_name: Panatkool
+---
+<p>ได้ไปอ่านบทความของ <a href="http://radesign.in/">radesign.in</a> มาครับ เค้าเขียนเรื่อง <a href="http://radesign.in/design-lessons-from-gmail-web-app/">Design lessons from Gmail web app</a> ได้น่าสนใจมากครับ ในบทความจะบอกเราว่ามีอะไรบ้างที่เค้าสะดุดใจในความเปลี่ยนแปลงของ Gmail ตัวที่เป็น Mobile Web และที่สำคัญคือเค้าลองเสนอแนวทางมาด้วยว่าสามารถเปลี่ยนให้มันดูดีขึ้น (ในสายตาของเค้า) ได้อย่างไรบ้าง เพราะอะไรบ้าง</p>
+<p>พออ่านแล้วพบว่าได้เรียนรู้มากมาย เลยขอจดบันทึกเอาไว้ที่นี่ด้วยเลยครับ</p>
+<p>บทความเล่าว่า ช่วงเดือนที่ผ่านมา (Mar 2013) Google ได้ปรับหน้า Mobile web Gmail ที่ใช้เปิดบนมือถือ ให้มีหน้าตาไปในแนวทางเดียวกับ GMail  App ซึ่งทางผู้เขียน (<a href="https://twitter.com/rakeshdesign">@rakeshdesign</a>) รู้สึกว่ามันอ่านยาก แม้ว่า Google จะทำให้มันเรียบมากขึ้นเพื่อให้เป็นไปตามแนวทางของเค้า แต่ก็มีปัญหาตามมาหลายข้อ เราลองมาดูหน้าตาตอนนี้กันก่อน</p>
+<p>[caption id="attachment_762" align="aligncenter" width="380"]<a href="http://www.ux.in.th/2013/04/learn-from-web-gmail-path-1/lesson1-inbox-original/" rel="attachment wp-att-762"><img class=" wp-image-762 " style="border: 0px;" alt="GMail Original Screen" src="{{ site.baseurl }}/assets/lesson1-inbox-original.png" width="380" height="536" /></a> Gmail Original Screen[/caption]</p>
+<p>ไม่แน่ใจว่าเพื่อนๆ สะดุดใจอะไรกันบ้าง แต่คุณ <a href="https://twitter.com/rakeshdesign">@rakeshdesign</a> แยกประเด็นปัญหาออกมาเป็น 3 ข้อครับ<!--more--></p>
+<p><strong>1. ปัญหาเรื่องการแยกแยะเนื้อหา</strong></p>
+<p>เค้าอ้างอิงคำพูดของคุณ Jason Cornwell (lead designer for Gmail) บอกเอาไว้ว่า</p>
+<blockquote><p>We spent a lot of time with typography to make it feel light and clean, and not like a burden</p></blockquote>
+<p>แต่ดูเหมือนบทความนี้จะไม่เห็นด้วย เค้าบอกว่า Font (Helvetica Neue) ที่ใช้ตอนนี้พอประกอบกับสีของจางๆ ของตัวหนังสือ มันทำให้ความบางของ Font สร้างความลำบากในการอ่าน ซึ่งไม่ดีเลย แต่ก็พอเข้าใจได้เพราะคุณ Cornwell เคยบอกว่า</p>
+<blockquote><p>If we just design [Gmail] to look like an Apple app, we’ve sort of failed. We want it to have some personality that’s its own.</p></blockquote>
+<p>เค้าบอกว่าไม่ต้องการให้ Gmail หน้าตาเหมือน Apple app เค้าต้องการสร้างเอกลักษณ์ของตัวเอง แต่ถ้ามันทำให้ UX แย่ลงก็ไม่ดีนะ บทความนี้ไม่ยอมแพ้เค้าบอกว่ามันน่าจะมีหนทางที่จะยังคงความเป็นตัวของตัวเองและสามารถอ่านได้ง่ายอยู่นะ</p>
+<p>เริ่มจากผู้เขียนบทความทดลองปรับ font ในเรื่องขนาด ความหนา และสีดู</p>
+<p>[caption id="attachment_760" align="aligncenter" width="641"]<a href="http://www.ux.in.th/2013/04/learn-from-web-gmail-path-1/lesson1-contrast/" rel="attachment wp-att-760"><img class=" wp-image-760 " style="border: 0px;" alt="lesson1-contrast" src="{{ site.baseurl }}/assets/lesson1-contrast.png" width="641" height="139" /></a> ทดลองปรับ font[/caption]</p>
+<p>จากการทดลองข้างต้น เค้าได้นำมาปรับหน้าเว็บโดยลองปรับวิธีแยกระหว่างจดหมายที่อ่านแล้วและยังไม่ได้อ่านด้วยสีแทนที่จะเป็นตัวหนา ลองปรับ Subject ให้เข้มขึ้น และลดสีของวันเวลาลง</p>
+<p>[caption id="attachment_769" align="aligncenter" width="608"]<a href="http://www.ux.in.th/2013/04/learn-from-web-gmail-path-1/lesson1-screen-comparison/" rel="attachment wp-att-769"><img class=" wp-image-769" alt="lesson1-screen-comparison" src="{{ site.baseurl }}/assets/lesson1-screen-comparison.png" width="608" height="477" /></a> เทียบต้นฉบับกับแบบที่ปรับแล้ว[/caption]</p>
+<p>ผมมองว่าแบบใหม่อ่านง่ายกว่าต้นฉบับมาก แต่มันทำให้นึกถึง Apple Mail อยู่เหมือนกัน ลองมาดูรายละเอียดที่เค้าปรับดูครับ</p>
+<p>[caption id="attachment_774" align="aligncenter" width="632"]<a href="http://www.ux.in.th/2013/04/learn-from-web-gmail-path-1/lesson1-spec-comparison/" rel="attachment wp-att-774"><img class=" wp-image-774" alt="lesson1-spec-comparison" src="{{ site.baseurl }}/assets/lesson1-spec-comparison.png" width="632" height="286" /></a> รายละเอียดการปรับแก้[/caption]</p>
+<p>ผมคิดว่าถ้าเปลียนจากสีฟ้าเป็นสีแดงน่าจะช่วยให้นึกถึง Apple Mail น้อยลง แต่ด้วยความที่สีฟ้ามันมีความหมายว่า Link ในโลกของ Web มันเลยตัดสินใจลำบากอยู่ครับ ทีนี้นอกจากหน้ารายการจดหมายแล้ว หน้าเนื้อหาจดหมายก็สามารถปรับได้เช่นเดียวกันครับ</p>
+<p>[caption id="attachment_764" align="aligncenter" width="380"]<a href="http://www.ux.in.th/2013/04/learn-from-web-gmail-path-1/lesson1-message-original1/" rel="attachment wp-att-764"><img class="size-full wp-image-764" alt="lesson1-message-original1" src="{{ site.baseurl }}/assets/lesson1-message-original1.png" width="380" height="536" /></a> หน้าเนื้อหา[/caption]</p>
+<p>หน้าเนื้อหาจดหมายของ Gmail อ่านง่ายกว่าหน้ารายการจดหมายเพราะทั้งขนาดและสีของ font ที่ชัดกว่า แต่ก็ยังสามารถทำให้ดีขึ้นได้อีกครับ</p>
+<p>[caption id="attachment_767" align="aligncenter" width="380"]<a href="http://www.ux.in.th/2013/04/learn-from-web-gmail-path-1/lesson1-message-screen-original-margin/" rel="attachment wp-att-767"><img class="size-full wp-image-767" alt="lesson1-message-screen-original-margin" src="{{ site.baseurl }}/assets/lesson1-message-screen-original-margin.png" width="380" height="150" /></a> ขอบข้างเนื้อหา[/caption]</p>
+<p>เบื้องต้นเราจะเห็นว่าหน้านี้ Gmail ใส่ขอบให้กับจดหมาย ซึ่งทำให้เรารู้สึกว่ามันเป็นเหมือนกระดาษแผ่นหนึ่ง แลกมาด้วยการเสียความ minimal ไปแต่ก็อย่างที่ Cornwell บอกไว้ว่าต้องการสร้างความเป็นตัวของตัวเองให้ Gmail เลยอาจจะจำเป็นต้องใส่ก็ได้ :-(</p>
+<p>ผู้เขียนบทความมองว่า Margin ระหว่างขอบถึงตัวหนังสือมีค่ามาก การทั้งต้องเสียพื้นที่ไป 20 pixel มันไม่คุ้มกับค่า Branding เลยเค้าเลยคิดว่าต้องตัดออก แต่ก็มีคำถามว่าแล้วขอบแค่ไหนถึงจะดี เค้าเลยเล่าให้ฟังว่าในงานพิมพ์เค้าคิดกันอย่างไร</p>
+<p>[caption id="attachment_761" align="aligncenter" width="678"]<a href="http://www.ux.in.th/2013/04/learn-from-web-gmail-path-1/lesson1-gutter-width/" rel="attachment wp-att-761"><img class=" wp-image-761" alt="ทดลองวางระยะห่างของ column" src="{{ site.baseurl }}/assets/lesson1-gutter-width.png" width="678" height="340" /></a> ทดลองวางระยะห่างของ column[/caption]</p>
+<p>ก็จะเห็นว่าในรูปแรกระยะห่างระหว่าง column มีความกว้างน้อยกว่าระยะห่างระหว่างบรรทัดทำให้มันดูเป็นบรรทัดเดียวกันมากกว่าแยกเป็นสอง column แต่ถ้าเราดูรูปที่สองถ้าระยะห่างระหว่าง column มากกว่าระยะห่างระหว่างบรรทัดก็จะทำให้มันดูเป็นบทความเดียวๆ มากกว่า ในแบบที่สามเราลองทำให้เท่ากัน อันนี้ดูน่าจะใช่ที่สุด เค้าเลยเอามาปรับใช้กับ Gmail ครับ</p>
+<p>[caption id="attachment_766" align="aligncenter" width="684"]<a href="http://www.ux.in.th/2013/04/learn-from-web-gmail-path-1/lesson1-message-screen-comparison/" rel="attachment wp-att-766"><img class=" wp-image-766" alt="lesson1-message-screen-comparison" src="{{ site.baseurl }}/assets/lesson1-message-screen-comparison.png" width="684" height="536" /></a> เทียบต้นฉบับกับแบบที่ปรับแล้ว[/caption]</p>
+<p>ผมรู้สึกว่าอ่านง่ายขึ้น หลักๆ น่าจะเป็นเพราะ font ที่ใหญ่ขึ้นส่วนเส่นที่หายไปก็รู้สึกโล่งดี มาลองดูว่าเค้าปรับอะไรไปบ้าง</p>
+<p>[caption id="attachment_768" align="aligncenter" width="760"]<a href="http://www.ux.in.th/2013/04/learn-from-web-gmail-path-1/lesson1-message-spec-comparison/" rel="attachment wp-att-768"><img class=" wp-image-768" alt="lesson1-message-spec-comparison" src="{{ site.baseurl }}/assets/lesson1-message-spec-comparison.png" width="760" height="596" /></a> แสดงรายละเอียดที่ปรับปรุงไป[/caption]</p>
+<p>แม้ว่าระยะห่างระหว่างขอบด้านข้างจะไม่เท่ากับระยะห่างระหว่างบรรทัดแต่ก็ใกล้เคียงกันครับ ไม่รู้ว่าเพื่อนๆ คิดเห็นกันอย่างไรลอง comment ดูนะครับ สำหรับข้อที่ 2-3 ผมขอตัดไปเป็นครั้งหน้าเพราะดูเหมือนตอนนี้จะเริ่มยาวเกินไปซะแล้ว</p>
+<p>ก่อนจะอ่านข้อที่ 2-3 อยากให้ลองอ่านบทความ เรื่องการ<a href="http://www.fastcodesign.com/1671388/the-ios-gmail-app-20-faster-and-far-more-beautiful#5">ปรับมาเป็น 2.0</a> ด้วยจะทำให้เราเข้าใจจิตใจคนออกแบบได้มากขึ้นครับ</p>
+<p>[caption id="attachment_776" align="aligncenter" width="642"]<a href="http://www.ux.in.th/2013/04/learn-from-web-gmail-path-1/1671388-inline-inline-gmail-20-ios/" rel="attachment wp-att-776"><img class=" wp-image-776" alt="1671388-inline-inline-gmail-20-ios" src="{{ site.baseurl }}/assets/1671388-inline-inline-gmail-20-ios.jpg" width="642" height="456" /></a> หน้าจอตัวอย่างการปรับจาก 1.0 มาเป็น 2.0[/caption]</p>
+<p>&nbsp;</p>

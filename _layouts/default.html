@@ -1,16 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:fb="http://ogp.me/ns/fb#">
+
   {% include head.html %}
 
   <body>
+
+    {% include google_tag.html %}
+
+    {% include facebook_sdk.html %}
+
     {% include header.html %}
 
-    <div class="content-wrapper">
-      <div class="content-wrapper__inner">
-        {{ content }}
-      </div>
+    {{ content }}
 
-      {% include footer.html %}
-    </div>
+    {% include footer.html %}
+
+    {% include foot.html %}
+
   </body>
+
 </html>

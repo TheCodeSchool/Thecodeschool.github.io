@@ -1,0 +1,50 @@
+---
+layout: post
+title: ทดสอบ UX ด้วยกระบวนการ A/B Testing
+date: 2012-08-30 12:00:00.000000000 +07:00
+type: post
+published: true
+status: publish
+categories:
+- principle
+tags:
+- test
+meta:
+  blogger_blog: www.ux.in.th
+  blogger_author: Apirak Panatkool
+  blogger_permalink: /2012/08/ux-by-a-b-testing.html
+  _blogger_self: https://www.blogger.com/feeds/164893737343921889/posts/default/5470176462244788876
+  _edit_last: '4'
+  dsq_thread_id: '984443537'
+  _wp_old_slug: '%e0%b8%97%e0%b8%94%e0%b8%aa%e0%b8%ad%e0%b8%9a-ux-%e0%b8%94%e0%b9%89%e0%b8%a7%e0%b8%a2%e0%b8%81%e0%b8%a3%e0%b8%b0%e0%b8%9a%e0%b8%a7%e0%b8%99%e0%b8%81%e0%b8%b2%e0%b8%a3-ab-testing'
+  _popular_views: '571'
+author:
+  login: apirak
+  email: apirakb@gmail.com
+  display_name: Apirak Panatkool
+  first_name: Apirak
+  last_name: Panatkool
+---
+<p>A/B testing หรือจะเรียกว่า split testing หรือ bucket testing ก็ได้ครับ แต่รวมๆ แล้วคือความพยายามที่จะทดสอบว่า UI แบบไหนที่ทำให้เว็บประสบความสำเร็จสูงสุด ตัวอย่างเช่น เรามี Title ของเว็บสองแบบ แล้วต้องการทดสอบว่าแบบไหนที่ทำให้คนกดปุ่ม "Sign up now" สูงสุด</p>
+<p style="text-align: center;">
+<a href="http://1.bp.blogspot.com/-XHUjK6_4apM/UD7Inm5RC9I/AAAAAAAB-ug/6cR9HTlHl4k/s1600/Screen+Shot+2555-08-30+at+8.57.34+AM.png"><img alt="" src="{{ site.baseurl }}/assets/Screen+Shot+2555-08-30+at+8.57.34+AM.png" width="640" height="294" border="0" /></a><br />
+ภาพแสดง UI แบบ A และ B ที่ต่างกันตรงข้อความ Title</p>
+<p>UI แบบ A แสดง Title ว่า "Cloud-Base Awesome for your Business" ส่วนแบบ B เขียนว่า "Cloud-Base will solve your business problems"</p>
+<p><!--more--></p>
+<p>หลังจากได้ UI A และ B แล้ว เราจะนำผู้ใช้จำนวนหนึ่ง สมติว่า 100 คน มาทดสอบเว็บ A ว่าใน 100 คนมีคนกด sign up Now กี่คน จากนั้นก็นำผู้ใช้อีก 100 คน ที่ไม่ใช่กลุ่มแรก มาทดสอบเว็บ B ว่าจะมีคนกด sign up Now กี่คน</p>
+<p>ถ้าผลออกมาว่าคนกด A เป็น 10% ส่วนคนกด B เป็น 15% ก็แสดงว่าแบบ B ดีกว่า แต่เราต้องแน่ใจวางเป้าหมาย หรือจะเรียกว่า Landing page ไว้ชัดเจนนะครับ</p>
+<p>วิธีการทดสอบแบบ A/B Testing ค่อนข้างตรงไปตรงมาและได้ผลชัดเจน แต่มีข้อเสียตรงที่จะเสียเวลามาก และยังทดสอบได้ทีละจุดทดสอบแบบภาพรวมไม่ได้ ดังนั้นจึงมักใช้วิธี AB Testing กับเว็บที่เสร็จแล้วและต้องการปรับเปลี่ยนเพียงเล็กน้อย แล้วทดสอบว่าดีหรือไม่ดี โดยใช้คนที่เข้ามาในเว็บอยู่แล้วเป็นคนทดสอบ</p>
+<p>สิ่งที่เป็นพื้นฐานของการทำ A/B Testing หรือจะเรียกเป็นกฎเลยก็ได้ มีอยู่ 3 ข้อ</p>
+<ol>
+<li>ต้องมีจำนวนคนทดสอบมากพอที่จะทำให้ผลลัพธ์มีความหมายในทางสถิติ</li>
+<li>ต้องทดสอบแค่ 1 อย่างต่อการทดสอบเท่านั้น</li>
+<li>ต้องมีความรู้ว่าจะเปลี่ยนอะไร และรู้ว่าสิ่งนั้นมีผลต่อผู้ใช้อย่างไร</li>
+</ol>
+<p>ในตัวอย่างที่ยกขึ้นมา จะต้องมีผู้ใช้มากพอจึงเช่นตัวอย่างละ 100 คนต่อแบบทดสอบและเปลี่ยนแค่ Title ได้อย่างเดียวเท่านั้น เพราะต้องการวัดว่าข้อความทั้งสองแบบจะมีผลต่อผู้ใช้อย่างไร ถ้าเราเปลี่ยนสีด้วย เปลี่ยนข้อความที่อื่นด้วย จะทำให้ผลที่ออกมาคลาดเคลื่อนได้</p>
+<p>สุดท้ายคือเราต้องรู้ด้วยว่าการเปลี่ยนข้อความ Title มันมีผลถึงขนาดต้องทดสอบเลยหรือเปล่า ในทาง UX บางทีข้อความแบบนี้อาจจะไม่มีผลหรืออาจจะไม่สามารถนำไปใช้ต่อในอนาคต ทำให้เสียเวลาไม่คุ้มกับการทดสอบ ดังนั้นก่อนจะลงทุนทดสอบอยากให้ลองหาข้อมูลเพิ่มเติมกันครับ</p>
+<p>มีอยู่สองที่ที่แนะนำให้ลองเข้าไปดูก่อน</p>
+<ol>
+<li><a href="http://www.conversion-rate-experts.com/">conversion-rate-experts.com</a></li>
+<li><a href="http://www.abtests.com/">abtests.com</a></li>
+</ol>
+<p>ผมชอบที่ abtests.com ครับ เข้าใจง่ายดี และสามารถนำมาใช้ได้ในอนาคต ถ้าใครเคยทำ A/B Testing ลองมาแลกเปลี่ยนกันนะครับ</p>
